@@ -228,7 +228,7 @@ static void usage(void)
 		"\tOne line for each value. The format is:\n"
 		"\t<TAG> <BT Address> <Timestamp> <Value>\n"
 		"\t<TAG>: one of 'T'(temperature) 'H'(humidity) 'B'(battery)\n"
-		"\t<Timestamp>: format is YYYYMMDDHHmmss\n"
+		"\t<Timestamp>: Unix timestamp (seconds since January 1, 1970)\n"
 		"\t<Value>: float for 'T' and 'H', integer for 'B' \n");
 		
 		
