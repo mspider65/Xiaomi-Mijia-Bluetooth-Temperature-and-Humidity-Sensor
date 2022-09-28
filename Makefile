@@ -7,7 +7,7 @@ OBJ = bluetooth.o  hci.o  scanMijia.o  oui.o
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 scanMijia: $(OBJ)
-	gcc -O2 -o $@ $^ $(CFLAGS)
+	$(CC) -O2 -o $@ $^ $(CFLAGS)
 
 clean:
 	rm -f *.o *~ core scanMijia 
